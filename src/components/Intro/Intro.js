@@ -4,7 +4,7 @@ import './Intro.css'
 const Intro = () => {
   return (
     <div>
-      
+     Intro 
     </div>
   )
 }
