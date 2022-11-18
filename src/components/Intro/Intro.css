@@ -1,0 +1,59 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.i-left {
+    gap: 1rem;
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.i-name>:nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--lightblue);
+}
+
+.i-name>:nth-child(3) {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+
+.i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0;
+}
+
+.i-icons>* {
+    transform: scale(0.6);
+}
+
+.i-icons>*:hover {
+    cursor: pointer;
+}
+
+.i-right {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
