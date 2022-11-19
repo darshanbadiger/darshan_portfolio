@@ -5,6 +5,9 @@ import Github from '../../images/github1.png'
 import Linkedin from '../../images/linkedin.png'
 import User from '../../images/user.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import Web from '../../images/web.png'
+import Chart from '../../images/chart.png'
+
 
 
 const Intro = () => {
@@ -36,10 +39,19 @@ const Intro = () => {
 
       {/* Right Side */}
       <div className="i-right">
-        <img src={User} alt=""/>
-
-        <FloatingDiv/>
+        <img src={User} alt="" />
+        <div style={{ top: '-%4', left: '68%' }}>
+          <FloatingDiv image={Web} text1='FRONT-END' text2='DEVELOPER' />
+        </div>
+        <div style={{ top: '18rem', left:'0rem'}}>
+          <FloatingDiv image={Chart} text1='DIGITAL' text2='MARKETING' />
+        </div>
       </div>
+
+      {/* blur divs */}
+
+      <div className="blur" style={{background: "reg(238 210 255)"}}></div>
+      <div className="blur" style={{top:'27rem',width:'21rem', height:'11rem',background: "#c1f5ef"}}></div>
     </div>
   )
 }

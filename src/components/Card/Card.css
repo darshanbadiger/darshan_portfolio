@@ -1,0 +1,30 @@
+.cards-1{
+    position: absolute;
+    width: 10rem;
+    height: 13rem;
+    flex-direction: column;
+    display: flex;
+    gap: 0.1rem;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255,255,0.5);
+    border: 7px solid var(--neonblue);
+    border-radius: 20px;
+    box-shadow: var(--boxshadow);
+    padding: 10px 26px 2rem 26px;
+}
+
+
+.cards-1>:nth-child(2){
+    font-weight: bold;
+}
+.cards-1>:nth-child(3){
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.card-button{
+    margin-top: 1rem;
+    color:black;
+    background: white;
+}
