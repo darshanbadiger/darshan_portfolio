@@ -16,7 +16,7 @@ const Services = () => {
         <span>Services</span>
         <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, porro magnam. Earum iste natus sapiente impedit delectus, aspernatur sint animi doloribus deleniti, voluptas inventore quaerat numquam enim itaque quo! Nulla?</span>
         <a href={Resume} dowload>
-        <button className="button d-button">Hire Me</button>
+        <button className="button d-button">Download CV</button>
         </a>
         <div className="blur blur1" style={{ background: "#abf1ff94" }}></div>
       </div>
