@@ -50,7 +50,7 @@ const Services = () => {
             detail={"Attending meetings with clients, assigning tasks to members"}
           />
         </div>
-        
+        <div className="blur s-blur2" style={{background: "var(--purple)"}}></div>
       </div>
     </div>
   )
