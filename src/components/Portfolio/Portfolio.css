@@ -1,30 +1,29 @@
 .portfolio{
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
     height: 70vh;
+    text-align: center;
 }
 
 .portfolio span:nth-of-type(1){
-    color: var(--black);
     font-size: 2.5rem;
+    color: var(--darkblue);
 }
 
 .portfolio span:nth-of-type(2){
-    color: var(--blue);
     font-size: 3rem;
     font-weight: bold;
+    color: var(--blue);
 }
 
 .portfolio .swiper{
-overflow: visible!important;
+    overflow: visible!important;
 }
 
 .portfolio-slider{
     margin-top: 3rem;
     width: 100%;
-
 }
 
 .portfolio-slider .swiper-slide{
@@ -32,7 +31,8 @@ overflow: visible!important;
 }
 
 .portfolio img{
-width: 19rem;
-filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
+    width: 20rem;
+    filter:drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
+    border-radius: 20px;
+    
 }
-
