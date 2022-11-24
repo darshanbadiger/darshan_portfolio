@@ -5,17 +5,21 @@ import Amazon from '../../images/amazon.png'
 import Google from '../../images/google.png'
 import Facebook from '../../images/facebook.png'
 import Git from '../../images/github1.png'
-
+import {themeContext} from '../../Context'
+import {useContext} from 'react'
 
 
 const Works = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    
     return (
         <div className="works">
             {/* Left side */}
             <div className="asewome">
-                <span>My Work Experience</span>
+                <span style={{color: darkMode?'white':''}}>My Work Experience</span>
                 <span>Brands & Clients</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, porro magnam. Earum iste natus sapiente impedit delectus, aspernatur sint animi doloribus deleniti, voluptas inventore quaerat numquam enim itaque quo! Nulla?</span>
+                <span style={{color: darkMode?'white':''}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, porro magnam. Earum iste natus sapiente impedit delectus, aspernatur sint animi doloribus deleniti, voluptas inventore quaerat numquam enim itaque quo! Nulla?</span>
                 <button className="button d-button">Hire Me</button>
                 <div className="blur blur1" style={{ background: "#abf1ff94" }}></div>
             </div>

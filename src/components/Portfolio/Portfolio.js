@@ -6,13 +6,18 @@ import Dandeli from '../../images/dandeli.png'
 import Asquare from '../../images/asquare.png'
 import Amino from '../../images/aminos.png'
 import 'swiper/css'
+import {themeContext} from '../../Context'
+import {useContext} from 'react'
 
 const Portfolio = () => {
+    
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="portfolio">
-        <span>Latest Projects</span>
+        <span style={{color: darkMode?'white':''}}>Latest Projects</span>
         <span>Portfolio</span>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos minus suscipit quasi sunt reprehenderit ipsam maxime? Quaerat possimus quis itaque nesciunt exercitationem magnam eveniet repellendus natus. Nihil, labore quia?</span>
+        <span style={{color: darkMode?'white':'black',}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos minus suscipit quasi sunt reprehenderit ipsam maxime? Quaerat possimus quis itaque nesciunt exercitationem magnam eveniet repellendus natus. Nihil, labore quia?</span>
   
         <Swiper
         spaceBetween={20}

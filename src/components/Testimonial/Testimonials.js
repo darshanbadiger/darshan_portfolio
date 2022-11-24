@@ -8,9 +8,13 @@ import a3 from '../../images/3.png'
 import a4 from '../../images/4.png'
 import { Pagination } from "swiper";
 import 'swiper/css/pagination'
+import {themeContext} from '../../Context'
+import {useContext} from 'react'
 
 
 const Testimonials = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   const clients = [
     {
@@ -35,9 +39,9 @@ const Testimonials = () => {
   return (
     <div className="t-wrapper">
       <div className="t-heading">
-        <span>Clients Always get</span>
+        <span style={{color: darkMode?'white':'black'}}>Clients Always get</span>
         <span> Exceptoinal Work </span>
-        <span>from me... </span>
+        <span style={{color: darkMode?'white':'black'}}>from me... </span>
         <div className="blur t-blur1" style={{ background: "var(--purple" }}></div>
         <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
       </div>

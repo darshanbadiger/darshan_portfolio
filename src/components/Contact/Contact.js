@@ -1,14 +1,19 @@
 // import React, { useState } from 'react'
 import './Contact.css'
+import {themeContext} from '../../Context'
+import {useContext} from 'react'
 const Contact = () => {
 
+  
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   // const [done, setDone] = useState(false);
 
   return (
    <div className="contact-form">
     <div className="w-left">
       <div className="asewome">
-      <span>Get In Touch</span>
+      <span style={{color: darkMode?'white':''}}>Get In Touch</span>
       <span>Contact Me</span>
 
       <div className="blur s-blur1" style={{background: "#ABF1FF94"}}></div>

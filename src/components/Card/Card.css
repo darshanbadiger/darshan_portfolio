@@ -1,7 +1,7 @@
 .cards-1{
     position: absolute;
     width: 10rem;
-    height: 13rem;
+    height: 14rem;
     flex-direction: column;
     display: flex;
     gap: 0.1rem;
@@ -16,11 +16,14 @@
 
 
 .cards-1>:nth-child(2){
+    font-size: 20px;
+    color: black;
     font-weight: bold;
 }
 .cards-1>:nth-child(3){
     margin-top: 1rem;
     font-size: 14px;
+    color: black;
 }
 
 .card-button{

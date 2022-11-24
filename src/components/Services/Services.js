@@ -5,16 +5,20 @@ import Web from '../../images/web.png'
 import Marketing from '../../images/marketing.png'
 import Memo from '../../images/memo.png'
 import Card from '../Card/Card'
+import {themeContext} from '../../Context'
+import {useContext} from 'react'
 
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="services">
       {/* Left side */}
       <div className="asewome">
-        <span>My Special</span>
+        <span style={{color: darkMode?'white':''}}>My Special</span>
         <span>Services</span>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, porro magnam. Earum iste natus sapiente impedit delectus, aspernatur sint animi doloribus deleniti, voluptas inventore quaerat numquam enim itaque quo! Nulla?</span>
+        <span style={{color: darkMode?'white':''}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, porro magnam. Earum iste natus sapiente impedit delectus, aspernatur sint animi doloribus deleniti, voluptas inventore quaerat numquam enim itaque quo! Nulla?</span>
         <a href={Resume} dowload>
         <button className="button d-button">Download CV</button>
         </a>

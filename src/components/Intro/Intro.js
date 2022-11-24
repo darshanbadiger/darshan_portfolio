@@ -7,16 +7,21 @@ import User from '../../images/user.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import Web from '../../images/web.png'
 import Chart from '../../images/chart.png'
-
+import {themeContext} from '../../Context'
+import {useContext} from 'react'
 
 
 const Intro = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
       {/* left side */}
       <div className="i-left">
         <div className="i-name">
-          <span>Hey! I am</span>
+          <span style={{color: darkMode?'white':''}}>Hey! I am</span>
           <span>Darshan Badiger</span>
           <span>Web eveloper, SEO Expert, Digital Marketer, Content Writer, Team Leader</span>
         </div>
@@ -40,7 +45,7 @@ const Intro = () => {
       {/* Right Side */}
       <div className="i-right">
         <img src={User} alt="" />
-        <div style={{ top: '-%4', left: '68%' }}>
+        <div style={{ top: '-%4', left: '68%' }} >
           <FloatingDiv image={Web} text1='FRONT-END' text2='DEVELOPER' />
         </div>
         <div style={{ top: '18rem', left:'0rem'}}>

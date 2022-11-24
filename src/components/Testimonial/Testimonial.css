@@ -41,7 +41,6 @@
     width: 30rem;
     height: 12rem;
     display: flex;
-
     background: rgba(255,255,255,0.26);
     border: 7px solid var(--neonblue);
     box-shadow: var(--boxshadow);
@@ -56,6 +55,8 @@ border-radius: 100%;
 
 .testimonial>span{
     color: var(--black);
+    font-size: 16px;
+    text-align: center;
 }
 
 .t-wrapper .swiper{
