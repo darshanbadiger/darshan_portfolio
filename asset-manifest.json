@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/darshan_portfolio/static/css/main.52c8c41f.css",
+    "main.js": "/darshan_portfolio/static/js/main.52902b43.js",
+    "static/js/787.9099afca.chunk.js": "/darshan_portfolio/static/js/787.9099afca.chunk.js",
+    "static/media/background.jpg": "/darshan_portfolio/static/media/background.33aac66526268449f1e2.jpg",
+    "static/media/asquare.png": "/darshan_portfolio/static/media/asquare.d506b7de5401614971a0.png",
+    "static/media/aminos.png": "/darshan_portfolio/static/media/aminos.223a638755c2b01aca4d.png",
+    "static/media/dandeli.png": "/darshan_portfolio/static/media/dandeli.ccd20cc705796af994e1.png",
+    "static/media/Darshan.pdf": "/darshan_portfolio/static/media/Darshan.2b0402f72dbffb6da52c.pdf",
+    "static/media/shri.png": "/darshan_portfolio/static/media/shri.e2f3ff8dd7087f7d6cca.png",
+    "static/media/user.png": "/darshan_portfolio/static/media/user.ec8fd0054ed63c82373b.png",
+    "index.html": "/darshan_portfolio/index.html",
+    "main.52c8c41f.css.map": "/darshan_portfolio/static/css/main.52c8c41f.css.map",
+    "main.52902b43.js.map": "/darshan_portfolio/static/js/main.52902b43.js.map",
+    "787.9099afca.chunk.js.map": "/darshan_portfolio/static/js/787.9099afca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52c8c41f.css",
+    "static/js/main.52902b43.js"
+  ]
+}
